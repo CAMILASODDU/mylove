@@ -1,10 +1,13 @@
 const btn = document.getElementById("btn");
 const inicio = document.getElementById("inicio");
 const mensaje = document.getElementById("mensaje");
+const audio = document.getElementById("audio");
 
 btn.addEventListener("click", () => {
     inicio.style.display = "none";
     mensaje.classList.remove("oculto");
+
+    audio.play(); // ← se activa con el click (válido para móviles)
 
     setInterval(crearCorazon, 300);
 });

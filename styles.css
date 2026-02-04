@@ -75,3 +75,15 @@ body {
         opacity: 0;
     }
 }
+
+/* todo lo anterior queda igual */
+
+#imagen {
+    margin-top: 20px;
+    width: 70%;
+    max-width: 300px;
+    border-radius: 15px;
+    opacity: 0;
+    animation: aparecer 2s ease forwards;
+    animation-delay: 1s;
+}
