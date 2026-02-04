@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle, #ff5f7e, #f3f2f2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Inicio */
+#inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn {
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+}
+
+/* Mensaje */
+#mensaje {
+    text-align: center;
+}
+
+#texto {
+    font-size: clamp(3rem, 10vw, 5rem);
+    color: white;
+    opacity: 0;
+    animation: aparecer 2s ease forwards;
+}
+
+.oculto {
+    display: none;
+}
+
+/* Animación texto */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Corazones */
+.corazon {
+    position: absolute;
+    font-size: 1.5rem;
+    animation: flotar 6s linear infinite;
+}
+
+@keyframes flotar {
+    from {
+        transform: translateY(100vh) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-10vh) scale(1.6);
+        opacity: 0;
+    }
+}
